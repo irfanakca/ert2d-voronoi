@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the accompanying article."
+title: "ert2d: 2D DC resistivity forward modelling and inversion with Voronoi parameterization"
+authors:
+  - family-names: Akca
+    given-names: Irfan
+  - family-names: Ozturk Akca
+    given-names: Cemile
+version: 0.1.0
+license: MIT
+repository-code: "https://github.com/irfanakca/ert2d-voronoi"

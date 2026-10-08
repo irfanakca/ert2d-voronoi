@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ert2d"
+version = "0.1.0"
+description = "2D DC resistivity forward modelling and Occam-type inversion with Voronoi, triangular and rectangular parameterizations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Irfan Akca" }, { name = "Cemile Ozturk Akca" }]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "shapely>=2.0",
+    "triangle>=20230923",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "pytest-cov"]
+gui = ["PySide6>=6.6"]
+
+[project.scripts]
+ert2d-gui = "ert2d.gui.app:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ert2d*"]
+
+[tool.setuptools.package-data]
+"ert2d.gui" = ["icons/*.png", "resources/*.clr"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

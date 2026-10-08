@@ -1,0 +1,3 @@
+Toolbar icons: Fugue Icons by Yusuke Kamiyamane
+https://p.yusukekamiyamane.com/  —  licensed under CC BY 3.0
+(run.png, stop.png, open_folder.png, open_files.png, save.png, export.png)
